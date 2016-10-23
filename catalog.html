@@ -1,63 +1,80 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-     <header>
-  <ul class="head"> 
-    <li> ИНФОРМАЦИЯ </li>
-    <li> ФОТО И ВИДЕО </li>
-    <li> КАРТА ШТАТА </li>
-    <li> ГОСТИНИЦЫ </li>
-  </ul>
+  <header>
+  <nav> <ul class="head">
+    <li> <a href="#url"> ИНФОРМАЦИЯ </a></li>
+    <li> <a href="#url"> ФОТО И ВИДЕО </a></li>
+  <div class="logo"> <img src="http://placehold.it/150x100">
+  </div>
+    <li> <a href="#url"> КАРТА ШТАТА </a></li>
+    <li> <a href="#url"> ГОСТИНИЦЫ </a></li>
+  </ul> </nav>
   </header>
 <section>
-  <div class="name"> ИНФРАСТРУКТУРА: </div>
+  <div><h2> ИНФРАСТРУКТУРА: </h2>
     <input type="checkbox" name="inf" value="pool"> БАССЕЙН
     <input type="checkbox" name="inf" value="parking"> ПАРКОВКА
-    <input type="checkbox" name="inf" value="wifi"> WI-FI
-  <div class="name"> ТИП ЖИЛЬЯ: </div>
+    <input type="checkbox" name="inf" value="wifi"> WI-FI </div>
+  <div><h2> ТИП ЖИЛЬЯ: </h2>
     <input type="checkbox" name="inf" value="hotel"> ГОСТИНИЦА
     <input type="checkbox" name="inf" value="motel"> МОТЕЛЬ
-    <input type="checkbox" name="inf" value="apartments"> АПАРТАМЕНТЫ
-  <div class="name"> СТОИМОСТЬ В СУТКИ (Р): </div>
+    <input type="checkbox" name="inf" value="apartments"> АПАРТАМЕНТЫ </div>
+  <div><h2> СТОИМОСТЬ В СУТКИ (Р): </h2></div>
 </section>
 <section>
-  <div class="result"> НАЙДЕНО: </div>
-  <div class="assortment"> СОРТИРОВКА: </div>
-  <div class="arrow"> </div>
+  <div>
+    <h3>НАЙДЕНО: </h3>
+  </div>
+  <div class="assortment"> СОРТИРОВКА:
+    <ul>
+      <li> ПО ЦЕНЕ </li>
+      <li> ПО ТИПУ </li>
+      <li> ПО РЕЙТИНГУ </li>
+    </ul>
+  </div>
+  <div class="arrow">
+    <ul>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
 </section>
-<article>
-  <div class="img"> <img src="http://placehold.it/150x100"> </div>
-  <div class="name"> 
-    <h3> AMARA RESORT & SPA </h3> 
-    <p> ГОСТИНИЦА ОТ 3500 Р.</p>
+<article class="hotel">
+  <div class="hotel-image"> <img src="http://placehold.it/150x100"> </div>
+  <div class="name">
+    <h1> <a href="#url">  AMARA RESORT &amp; SPA </a></h1>
+    <p><span> ГОСТИНИЦА </span><span> ОТ 3500 Р.</span></p>
+    <li> <a href="#url"> ПОДРОБНЕЕ </a></li>
+    <li> <a href="#url"> ЗАБРОНИРОВАТЬ </a></li>
     </div>
-    <div class="value"> РЕЙТИНГ </div> 
+    <div class="value"> РЕЙТИНГ </div>
 </article>
-<article>
-  <div class="img"> <img src="http://placehold.it/150x100"> </div>
-  <div class="name"> 
-    <h3> DESERT QUAIL INN </h3> 
-    <p> МОТЕЛЬ ОТ 2000 Р.</p>
+<article class="hotel">
+  <div class="hotel-image"> <img src="http://placehold.it/150x100"> </div>
+  <div class="name">
+    <h1> <a href="#url">  DESERT QUAIL INN </a></h1>
+    <p> <span> МОТЕЛЬ </span> <span>ОТ 2000 Р.</span></p>
+    <li> <a href="#url"> ПОДРОБНЕЕ </a></li>
+    <li> <a href="#url"> ЗАБРОНИРОВАТЬ </a></li>
     </div>
-    <div class="value"> РЕЙТИНГ </div> 
+    <div class="value"> РЕЙТИНГ </div>
 </article>
-<article>
-  <div class="img"> <img src="http://placehold.it/150x100"> </div>
-  <div class="name"> 
-    <h3> VILLAS AT POCO DIABLO </h3> 
-    <p> АПАРТАМЕНТЫ ОТ 4000 Р.</p>
+<article class="hotel">
+  <div class="hotel-image"> <img src="http://placehold.it/150x100"> </div>
+  <div class="name">
+    <h1><a href="#url">  VILLAS AT POCO DIABLO </a></h1>
+    <p> <span>АПАРТАМЕНТЫ </span> <span> ОТ 4000 Р.</span></p>
+    <li> <a href="#url"> ПОДРОБНЕЕ </a></li>
+    <li> <a href="#url"> ЗАБРОНИРОВАТЬ </a></li>
     </div>
-    <div class="value"> РЕЙТИНГ </div> 
+    <div class="value"> РЕЙТИНГ </div>
 </article>
 <footer>
-      <div class="#"> #VISITSEDONA </div>
-      <div class="links"> twitter, vk, facebook </div>
-      <div class="author"> WEBSITE BY HTMLACADEMY </div>
+      <div class="hashtag"> <a href="#url"> #VISITSEDONA </a></div>
+      <div class="links">
+          <li><a href="#url"> twitter </a></li>
+          <li><a href="#url"> vk </a></li>
+          <li><a href="#url"> facebook </a></li>
+      </div>
+      <div class="author"> <a href="#url"> <span>WEBSITE BY </span> HTMLACADEMY </a></div>
       </footer>
      </body>
-</html> 
+</html>
