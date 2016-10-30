@@ -1,35 +1,41 @@
 body {
-  font-size: : 100%;
+  width: 1200px;
+  margin: 0 auto;
 }
 .navigation {
+  width: 1200px;
   display: flex;
   justify-content: space-around;
 }
 .features {
   display: flex;
+  margin: 0 auto;
+}
+.features-item {
+  width: 400px;
+    margin: 0 auto;
+}
+.intro-text {
+  width: 1000px;
+  margin: 0 auto;
 }
 .intro-image {
   display: flex;
-  margin-left: 80px;
-}
-.welcome {
-  margin-left: -770px;
-  margin-top: 60px;
-}
-.bottom {
-  margin-top: 565px;
-  margin-left: -842px;
+    margin: 0 auto;
 }
 .advantages {
+  width: 1200px;
   display: flex;
+  margin: 0 auto;
 }
-.adress {
-  display: flex;
-  justify-content: space-around;
+.advantages-item {
+  width: 400px;
 }
 .hotel {
   display: flex;
 }
 .sorting {
+  width: 1200px;
   display: flex;
+  margin: 0 auto;
 }
