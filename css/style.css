@@ -1,6 +1,7 @@
 body {
   width: 100%;
   margin: 0 auto;
+  background: #ffffff;
 }
 .container {
   width: 1200px;
@@ -21,12 +22,12 @@ body {
 .features-blue {
   width: 400px;
     text-align: center;
-    background: #A9D0F5;
+    background: #81b3d2;
 }
 .features-grey {
   width: 400px;
     text-align: center;
-    background: #F2F2F2;
+    background: #eeeeee;
 }
 .intro-text {
   width: 1200px;
@@ -40,6 +41,9 @@ body {
   width: 1200px;
   display: flex;
   margin: 0 auto;
+background-image: url(../img/background-mountains.jpg);
+background-repeat: no-repeat;
+background-size: 1200px 700px;
 }
 .advantages-item {
   width: 400px;
@@ -62,10 +66,10 @@ body {
   justify-content: space-around;
 }
 .name {
-  width: 700px;
+  width: 800px;
 }
 .hotel-image {
-  width: 300px;
+  width: 200px;
 }
 .sorting {
   width: 1200px;
@@ -83,8 +87,13 @@ body {
   display: flex;
 }
 .utilities {
-  width: 400px;
+  width: 300px;
 }
 .housing {
-  width: 400px;
+  width: 300px;
+}
+ p, span {
+  line-height: 1.5;
+  font-size: 1.2em;
+  font-family: 'Times New Roman';
 }
