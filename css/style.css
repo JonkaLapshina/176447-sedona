@@ -4,6 +4,7 @@ body {
 }
 .container {
   width: 1200px;
+  margin: 0 auto;
 }
 .navigation {
   width: 1200px;
@@ -17,10 +18,15 @@ body {
 .features-image {
   width: 800px;
 }
-.features-item {
+.features-blue {
   width: 400px;
     text-align: center;
     background: #A9D0F5;
+}
+.features-grey {
+  width: 400px;
+    text-align: center;
+    background: #F2F2F2;
 }
 .intro-text {
   width: 1200px;
@@ -56,16 +62,29 @@ body {
   justify-content: space-around;
 }
 .name {
-  width: 300px;
-}
-.price-hotel {
   width: 700px;
+}
+.hotel-image {
+  width: 300px;
 }
 .sorting {
   width: 1200px;
   display: flex;
   justify-content: space-around;
 }
-.features-item:nth-child(3) {
-  background: none;
+.result {
+  width: 300px;
+}
+.assortment {
+  width: 700px;
+}
+.services {
+  width: 1200px;
+  display: flex;
+}
+.utilities {
+  width: 400px;
+}
+.housing {
+  width: 400px;
 }
