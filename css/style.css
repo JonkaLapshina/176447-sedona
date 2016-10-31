@@ -1,6 +1,9 @@
 body {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
+}
+.container {
+  width: 1200px;
 }
 .navigation {
   width: 1200px;
@@ -11,13 +14,17 @@ body {
   display: flex;
   margin: 0 auto;
 }
+.features-image {
+  width: 800px;
+}
 .features-item {
   width: 400px;
-    margin: 0 auto;
+    text-align: center;
+    background: #A9D0F5;
 }
 .intro-text {
-  width: 1000px;
-  margin: 0 auto;
+  width: 1200px;
+  text-align: center;
 }
 .intro-image {
   display: flex;
@@ -30,12 +37,35 @@ body {
 }
 .advantages-item {
   width: 400px;
+  text-align: center;
+}
+.search {
+  text-align: center;
+}
+.map {
+  text-align: center;
+}
+.direction {
+  width: 1200px;
+  display: flex;
+  justify-content: space-around;
 }
 .hotel {
+  width: 1200px;
   display: flex;
+  justify-content: space-around;
+}
+.name {
+  width: 300px;
+}
+.price-hotel {
+  width: 700px;
 }
 .sorting {
   width: 1200px;
   display: flex;
-  margin: 0 auto;
+  justify-content: space-around;
+}
+.features-item:nth-child(3) {
+  background: none;
 }
