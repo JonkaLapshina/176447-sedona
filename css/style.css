@@ -45,6 +45,11 @@ background-image: url(../img/background-mountains.jpg);
 background-repeat: no-repeat;
 background-size: 1200px 700px;
 }
+.advantage {
+  width: 1200px;
+  display: flex;
+  margin: 0 auto;
+}
 .advantages-item {
   width: 400px;
   text-align: center;
