@@ -15,9 +15,14 @@ body {
 .features {
   display: flex;
   margin: 0 auto;
+  height: 300px;
 }
 .features-image {
   width: 800px;
+}
+.features-item {
+  padding: 40px;
+  line-height: 1.5;
 }
 .features-blue {
   width: 400px;
@@ -39,11 +44,13 @@ body {
 }
 .advantages {
   width: 1200px;
+  height: 200px;
   display: flex;
   margin: 0 auto;
 background-image: url(../img/background-mountains.jpg);
 background-repeat: no-repeat;
-background-size: 1200px 700px;
+background-size: 100% auto;
+line-height: 2;
 }
 .advantage {
   width: 1200px;
@@ -53,9 +60,23 @@ background-size: 1200px 700px;
 .advantages-item {
   width: 400px;
   text-align: center;
+  padding: 40px;
+  line-height: 1.5;
 }
 .search {
   text-align: center;
+  padding: 40px;
+  line-height: 2;
+}
+.search a {
+  margin-top: 20px;
+  color: white;
+  background: #766357;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+  text-decoration: none;
 }
 .map {
   text-align: center;
@@ -79,13 +100,42 @@ background-size: 1200px 700px;
 .sorting {
   width: 1200px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 10px;
+ color: #766357;
+}
+.price-hotel span {
+  color: #766357;
+}
+.detail {
+  color: white;
+  background: #81b3d2;
+  padding: 10px;
+  text-decoration: none;
+  line-height: 3;
+  margin-right: 10px;
+}
+.reserve {
+  color: white;
+  background: #766357;
+  padding: 10px;
+  text-decoration: none;
+  line-height: 3;
+}
+.rating {
+  color: #766357;
+  background: #eeeeee;
+  padding: 10px;
+  text-decoration: none;
+  line-height: 3;
 }
 .result {
-  width: 300px;
+  width: 150px;
+  margin-left: 40px;
 }
 .assortment {
-  width: 700px;
+  width: 850px;
+  margin-top: 10px;
 }
 .services {
   width: 1200px;
@@ -93,6 +143,7 @@ background-size: 1200px 700px;
 }
 .utilities {
   width: 300px;
+  padding-left: 80px;
 }
 .housing {
   width: 300px;
