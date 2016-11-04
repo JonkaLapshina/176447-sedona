@@ -7,13 +7,20 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
-.navigation {
-  width: 1200px;
-  display: flex;
-  justify-content: space-around;
+li {
+  list-style-type: none;
+  display: inline;
+}
+li a {
+  width: 240px;
+  text-decoration: none;
+  color: black;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 .logo {
   z-index: 2;
+
 }
 .mountains {
   position: absolute;
@@ -199,7 +206,8 @@ width: 138px;
 .sorting {
   width: 1200px;
   display: flex;
-  justify-content: space-between;
+  padding-left: 72px;
+  padding-right: 72px;
   padding-top: 38px;
   padding-bottom: 35px;
  color: #766357;
@@ -231,7 +239,6 @@ width: 138px;
 }
 .result {
   width: 165px;
-  margin-left: 73px;
 }
 .assortment {
   width: 780px;
@@ -256,7 +263,7 @@ width: 138px;
   display: flex;
 }
 .utilities {
-  width: 25%;
+  width: 220px;
   padding-left: 80px;
 }
 .housing {
