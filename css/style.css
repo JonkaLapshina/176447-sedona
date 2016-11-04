@@ -19,8 +19,8 @@ li {
 li a {
   text-decoration: none;
   color: black;
-  padding: 20px;
-  margin-left: 70px;
+  padding-left: 50px;
+  padding-right: 60px;
 }
 .navigation li:nth-child(2){
   margin-right: 240px;
@@ -29,7 +29,7 @@ li a {
   z-index: 2;
   position:absolute;
   top:0;
-  left:50%;
+  left:45%;
   margin-left: 0px;
 }
 .mountains {
