@@ -7,20 +7,30 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
+.navigation {
+  width: 1200px;
+  margin-bottom: 40px;
+}
 li {
   list-style-type: none;
   display: inline;
+  width: 240px;
 }
 li a {
-  width: 240px;
   text-decoration: none;
   color: black;
-  margin-left: 60px;
-  margin-right: 60px;
+  padding: 20px;
+  margin-left: 70px;
+}
+.navigation li:nth-child(2){
+  margin-right: 240px;
 }
 .logo {
   z-index: 2;
-
+  position:absolute;
+  top:0;
+  left:50%;
+  margin-left: 0px;
 }
 .mountains {
   position: absolute;
@@ -204,7 +214,8 @@ width: 138px;
   width: 165px;
 }
 .sorting {
-  width: 1200px;
+  box-sizing: border-box;
+  width: 1031px;
   display: flex;
   padding-left: 72px;
   padding-right: 72px;
@@ -243,6 +254,7 @@ width: 138px;
 .assortment {
   width: 780px;
   margin-top: 10px;
+  padding-left: 25px;
 }
 .link-blue {
   text-decoration: none;
