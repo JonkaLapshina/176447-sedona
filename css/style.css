@@ -11,16 +11,21 @@ body {
   width: 1200px;
   margin-bottom: 40px;
 }
+ul {
+  display: flex;
+}
 li {
   list-style-type: none;
-  display: inline;
-  width: 240px;
 }
 li a {
   text-decoration: none;
   color: black;
   padding-left: 50px;
   padding-right: 60px;
+}
+.navigation li {
+  display: block;
+  width: 240px;
 }
 .navigation li:nth-child(2){
   margin-right: 240px;
@@ -215,7 +220,7 @@ width: 138px;
 }
 .sorting {
   box-sizing: border-box;
-  width: 1031px;
+  width: 1200px;
   display: flex;
   padding-left: 72px;
   padding-right: 72px;
