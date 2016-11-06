@@ -23,8 +23,8 @@ li a {
   color: black;
   padding-left: 50px;
   padding-right: 60px;
-  font-family: "PTSans", sans-serif;
-  src: url(fonts/ptsans.ttf);
+  font-size: 14px;
+  font-family: "PT Sans", sans-serif;
 }
 .navigation li {
   display: block;
@@ -72,19 +72,45 @@ li a {
   display: flex;
   margin: 0 auto;
 }
+.features h2 {
+  font-size: 21px;
+  line-height: 21px;
+  font-family: "PT Sans", sans-serif;
+}
+.features span {
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "PT Sans", sans-serif;
+}
+.features p {
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "PT Sans", sans-serif;
+}
+.advantage h2 {
+  font-size: 21px;
+  line-height: 21px;
+  font-family: "PT Sans", sans-serif;
+}
+.advantage span {
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "PT Sans", sans-serif;
+}
 .features-image {
   width: 800px;
 }
 .features-item {
-padding-top: 57px;
-padding-left: 55px;
-padding-right: 57px;
-padding-bottom: 62px;
+padding-top: 52px;
+padding-left: 60px;
+padding-right: 58px;
+padding-bottom: 65px;
 }
 .features-blue {
   width: 400px;
   text-align: center;
   background: #81b3d2;
+  color: white;
 }
 .features-grey {
   width: 400px;
@@ -98,6 +124,14 @@ padding-bottom: 62px;
   padding-left: 20px;
   margin-bottom: 58px;
 }
+.intro-text h2 {
+  font-size: 21px;
+font-family: 'PT Sans', sans-serif;
+}
+.intro-text p {
+  font-size: 14px;
+font-family: 'PT Sans', sans-serif;
+}
 .advantages {
   width: 1200px;
   display: flex;
@@ -106,6 +140,7 @@ background-repeat: no-repeat;
 background-size: 100% auto;
 line-height: 2;
 margin-top: -20px;
+color: white;
 }
 .advantage {
   width: 1200px;
@@ -114,11 +149,10 @@ margin-top: -20px;
 .advantages-item {
   width: 400px;
   text-align: center;
-  padding-top: 57px;
-  line-height: 1.5;
-  padding-bottom: 85px;
-  padding-left: 57px;
-  padding-right: 52px;
+  padding-top: 59px;
+  padding-left: 73px;
+  padding-right: 76px;
+  padding-bottom: 86px;
 }
 .search {
   text-align: center;
@@ -126,9 +160,13 @@ margin-top: -20px;
 }
 .search h3 {
   padding-top: 53px;
+  font-size: 30px;
+  font-family: "PT Sans", sans-serif;
 }
 .search p {
   padding-bottom: 51px;
+  font-size: 14px;
+  font-family: "PT Sans", sans-serif;
 }
 .search a {
   width: 500px;
@@ -140,6 +178,14 @@ margin-top: -20px;
   padding-left: 142px;
   padding-right: 142px;
   text-decoration: none;
+  font-size: 21px;
+  font-family: "PT Sans", sans-serif;
+}
+.advantages input {
+  color: white;
+}
+input:checked {
+  background: white;
 }
 .map {
   text-align: center;
@@ -158,9 +204,12 @@ margin-top: -20px;
 label {
     display: block;
     margin-bottom: 10px;
+    font-size: 14px;
+    font-family: "PT Sans", sans-serif;
 }
 input {
-    font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-family: "PT Sans", sans-serif;
   }
 input[type="number"] {
   width: 114px;
@@ -184,6 +233,10 @@ input[type="date"] {
   display: flex;
   justify-content: space-around;
 }
+.direction a {
+  font-size: 21px;
+  font-family: "PT Sans", sans-serif;
+}
 .hashtag {
   width: 400px;
     padding-top: 50px;
@@ -198,11 +251,6 @@ input[type="date"] {
 }
 .hashtag a:last-child {
   margin-right: 102px;
-}
-.academy {
-  position: absolute;
-right: 90px;
-bottom: -240px;
 }
 .links {
     margin: 0 auto;
@@ -237,9 +285,10 @@ bottom: -240px;
 }
 .name {
   width: 780px;
+   line-height:1;
 }
-.name a:first-child{
-  color: black;
+.name a {
+  text-decoration: none;
 }
 .price-hotel span {
   color: #766357;
@@ -273,21 +322,21 @@ bottom: -240px;
   bottom: 10px;
 }
 .detail {
-  color: white;
   background: #81b3d2;
   padding: 10px;
   text-decoration: none;
   line-height: 3;
   margin-right: 10px;
   width: 109px;
+  color: white;
 }
 .reserve {
-  color: white;
   background: #766357;
   padding: 10px;
   text-decoration: none;
   line-height: 3;
   width: 134px;
+  color: white;
 }
 .rating {
   width: 111px;
@@ -299,6 +348,7 @@ bottom: -240px;
 }
 .result {
   width: 165px;
+  color: black;
 }
 .assortment {
   width: 780px;
@@ -331,7 +381,7 @@ bottom: -240px;
 .housing {
   width: 25%;
 }
- p, span {
-  font-size: 1.2em;
-  font-family: 'PT Sans', Arial, sans-serif;
+@font-face {
+  font-family: PT Sans;
+  src: url(img/fonts/ptsanz.ttf);
 }
