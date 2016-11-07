@@ -24,7 +24,7 @@ li a {
   padding-left: 50px;
   padding-right: 60px;
   font-size: 14px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 .navigation li {
   display: block;
@@ -40,62 +40,60 @@ li a {
   left:45%;
   margin-left: 0px;
 }
-.mountains {
-  position: absolute;
-    background-image: url('img/mountains.jpg');
-    background-repeat: repeat-x;
-    width:1200px;
-    left: 0;
-    top: 56px;
-    padding-left: 35px;
+.intro-image {
+  position:relative;
+    background-image: url('../img/mountains.jpg');
+    background-repeat: no-repeat;
+      background-position: center;
+      background-size: 1200px 509px;
+    margin-top: -12px;
 }
 .welcome {
   position: absolute;
-    background-image: url('img/icons/welcome.png');
+    background-image: url('../img/icons/welcome.png');
     background-repeat: no-repeat;
     background-position: center center;
     width: 476px;
-    left: 418px;
-    top: 132px;
+    left: 372px;
+    top: 75px;
 }
-.bottom {
-  position: absolute;
-    background-image: url('img/icons/bottom.png');
-    background-repeat: no-repeat;
-    background-position: center center;
+.intro-image::after {
+  content: "";
+    background-image: url('../img/icons/bottom.png');
     width: 1200px;
-    left: 0;
-    top: 504.5px;
-    padding-left: 35px;
+    border: 2px solid red;
+display:block;
+height: 59px;
 }
 .features {
   display: flex;
   margin: 0 auto;
+  align-items: flex-start;
 }
 .features h2 {
   font-size: 21px;
   line-height: 21px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 .features span {
   font-size: 14px;
   line-height: 21px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 .features p {
   font-size: 14px;
   line-height: 21px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 .advantage h2 {
   font-size: 21px;
   line-height: 21px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 .advantage span {
   font-size: 14px;
   line-height: 21px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 .features-image {
   width: 800px;
@@ -104,7 +102,7 @@ li a {
 padding-top: 52px;
 padding-left: 60px;
 padding-right: 58px;
-padding-bottom: 65px;
+padding-bottom: 57px;
 }
 .features-blue {
   width: 400px;
@@ -126,21 +124,32 @@ padding-bottom: 65px;
 }
 .intro-text h2 {
   font-size: 21px;
-font-family: 'PT Sans', sans-serif;
+font-family: "PT Sans", Arial, sans-serif;
 }
 .intro-text p {
   font-size: 14px;
-font-family: 'PT Sans', sans-serif;
+font-family: "PT Sans", Arial, sans-serif;
 }
 .advantages {
   width: 1200px;
   display: flex;
 background-image: url(../img/background-mountains.jpg);
 background-repeat: no-repeat;
-background-size: 100% auto;
-line-height: 2;
-margin-top: -20px;
+background-size: 1200px 216px;
+padding-top: 30px;
+margin-top: -15px;
 color: white;
+padding-bottom: 32px;
+line-height: 24px;
+}
+.advantages h2 {
+  font-size: 16px;
+  font-family: "PT Sans", Arial, sans-serif;
+}
+.advantages input {
+  font-size: 14px;
+  font-family: "PT Sans", Arial, sans-serif;
+
 }
 .advantage {
   width: 1200px;
@@ -161,12 +170,12 @@ color: white;
 .search h3 {
   padding-top: 53px;
   font-size: 30px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 .search p {
   padding-bottom: 51px;
   font-size: 14px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 .search a {
   width: 500px;
@@ -179,7 +188,7 @@ color: white;
   padding-right: 142px;
   text-decoration: none;
   font-size: 21px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 .advantages input {
   color: white;
@@ -205,11 +214,11 @@ label {
     display: block;
     margin-bottom: 10px;
     font-size: 14px;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
 }
 input {
   font-size: 14px;
-  font-family: "PT Sans", sans-serif;
+font-family: "PT Sans", Arial, sans-serif;
   }
 input[type="number"] {
   width: 114px;
@@ -235,7 +244,7 @@ input[type="date"] {
 }
 .direction a {
   font-size: 21px;
-  font-family: "PT Sans", sans-serif;
+font-family: "PT Sans", Arial, sans-serif;
 }
 .hashtag {
   width: 400px;
@@ -282,44 +291,68 @@ input[type="date"] {
   display: flex;
   padding-left: 72px;
   padding-right: 72px;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 .name {
   width: 780px;
-   line-height:1;
 }
 .name a {
   text-decoration: none;
 }
+.name h1 {
+  font-size: 21px;
+font-family: "PT Sans", Arial, sans-serif;
+line-height: 16px;
+}
+.name h1 a {
+    color: black;
+}
 .price-hotel span {
   color: #766357;
+  font-size: 14px;
+font-family: "PT Sans", Arial, sans-serif;
+line-height: 20px;
 }
 .hotel-image {
   width: 165px;
+  padding-top: 13px;
 }
 .sorting {
   box-sizing: border-box;
   width: 1200px;
   display: flex;
-  padding-left: 72px;
-  padding-right: 72px;
-  padding-top: 38px;
-  padding-bottom: 35px;
  color: #766357;
+ padding-bottom: 32px;
+ padding-top: 31px;
+ padding-right: 71px;
+}
+.sorting h3 {
+  font-size: 21px;
+font-family: "PT Sans", Arial, sans-serif;
+}
+.sorting span {
+  font-size: 12px;
+font-family: "PT Sans", Arial, sans-serif;
+}
+.sorting a {
+  font-size: 12px;
+font-family: "PT Sans", Arial, sans-serif;
 }
 .fourstars {
   position: absolute;
   right: 120px;
-  bottom: 300px;
+  bottom: 230px;
 }
 .twostars {
   position: absolute;
   right: 120px;
-  bottom: 160px;
+  bottom: 55px;
 }
 .threestars {
   position: absolute;
   right: 120px;
-  bottom: 10px;
+  bottom: -110px;
 }
 .detail {
   background: #81b3d2;
@@ -329,6 +362,8 @@ input[type="date"] {
   margin-right: 10px;
   width: 109px;
   color: white;
+  font-size: 14px;
+font-family: "PT Sans", Arial, sans-serif;
 }
 .reserve {
   background: #766357;
@@ -337,23 +372,33 @@ input[type="date"] {
   line-height: 3;
   width: 134px;
   color: white;
+  font-size: 14px;
+font-family: "PT Sans", Arial, sans-serif;
+}
+.value {
+  padding-top: 65px;
 }
 .rating {
   width: 111px;
   color: #766357;
   background: #eeeeee;
-  padding: 10px;
+  padding-left: 18px;
+  padding-right: 13px;
+  padding-top: 7px;
+  padding-bottom: 9px;
   text-decoration: none;
   line-height: 3;
+  font-size: 14px;
+font-family: "PT Sans", Arial, sans-serif;
 }
 .result {
   width: 165px;
   color: black;
+  padding-left: 72px;
 }
 .assortment {
   width: 780px;
-  margin-top: 10px;
-  padding-left: 25px;
+padding-top: 23px;
 }
 .link-blue {
   text-decoration: none;
@@ -369,6 +414,16 @@ input[type="date"] {
 }
 .arrow {
   width: 111px;
+}
+.pointerdown {
+  position: absolute;
+  right: 120px;
+  bottom: 350px;
+}
+.pointerup {
+  position: absolute;
+  right: 133px;
+  bottom: 350px;
 }
 .services {
   width: 1200px;
