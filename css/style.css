@@ -1,15 +1,19 @@
+.container {
+  width: 1200px;
+margin: 0 auto;
+  background: #ffffff;
+}
 body {
   width: 100%;
   margin: 0 auto;
-  background: #ffffff;
-}
-.container {
-  width: 1200px;
-  margin: 0 auto;
+  background: #f2f2f2;
+      text-transform:uppercase;
+      background-position: top;
+      letter-spacing: 1px;
 }
 .navigation {
   width: 1200px;
-  margin-bottom: 40px;
+  padding-bottom: 30px;
 }
 ul {
   display: flex;
@@ -17,6 +21,7 @@ ul {
 }
 li {
   list-style-type: none;
+  font-weight: bold;
 }
 li a {
   text-decoration: none;
@@ -44,26 +49,22 @@ li a {
   position:relative;
     background-image: url('../img/mountains.jpg');
     background-repeat: no-repeat;
-      background-position: center;
       background-size: 1200px 509px;
-    margin-top: -12px;
 }
 .welcome {
   position: absolute;
+  z-index: 2;
     background-image: url('../img/icons/welcome.png');
     background-repeat: no-repeat;
     background-position: center center;
     width: 476px;
-    left: 372px;
-    top: 75px;
 }
 .intro-image::after {
-  content: "";
-    background-image: url('../img/icons/bottom.png');
-    width: 1200px;
-    border: 2px solid red;
+content: "";
+background-image: url('img/icons/bottom.png');
+width: 1200px;
 display:block;
-height: 59px;
+height: 344px;
 }
 .features {
   display: flex;
@@ -74,16 +75,51 @@ height: 59px;
   font-size: 21px;
   line-height: 21px;
   font-family: "PT Sans", Arial, sans-serif;
+  font-weight: bold;
+}
+.features-item:first-child h2 {
+  width: 128px;
+  padding-left: 139px;
+}
+.features-item:last-child h2 {
+  width: 162px;
+  padding-left: 124px;
 }
 .features span {
   font-size: 14px;
   line-height: 21px;
   font-family: "PT Sans", Arial, sans-serif;
+  font-weight: regular;
 }
 .features p {
   font-size: 14px;
   line-height: 21px;
   font-family: "PT Sans", Arial, sans-serif;
+  font-weight: regular;
+}
+.features-blue:first-child p {
+  padding-left: 62px;
+  width: 315px;
+}
+.features-blue:last-child p {
+  width: 305px;
+  padding-left: 48px;
+}
+.features-grey:first-child p {
+  padding-left: 62px;
+  width: 315px;
+}
+.features-grey:nth-child(2) p {
+  padding-left: 62px;
+  width: 315px;
+}
+.features-grey:nth-child(2) h2 {
+  padding-left: 150px;
+  width: 100px;
+}
+.features-grey:last-child p {
+  width: 305px;
+  padding-left: 48px;
 }
 .advantage h2 {
   font-size: 21px;
@@ -99,10 +135,8 @@ height: 59px;
   width: 800px;
 }
 .features-item {
-padding-top: 52px;
-padding-left: 60px;
-padding-right: 58px;
-padding-bottom: 57px;
+padding-top: 42px;
+padding-bottom: 46px;
 }
 .features-blue {
   width: 400px;
@@ -125,31 +159,36 @@ padding-bottom: 57px;
 .intro-text h2 {
   font-size: 21px;
 font-family: "PT Sans", Arial, sans-serif;
+font-weight: bold;
+width: 500px;
+padding-left: 380px;
 }
 .intro-text p {
   font-size: 14px;
 font-family: "PT Sans", Arial, sans-serif;
+font-weight: regular;
 }
 .advantages {
   width: 1200px;
   display: flex;
-background-image: url(../img/background-mountains.jpg);
-background-repeat: no-repeat;
-background-size: 1200px 216px;
 padding-top: 30px;
-margin-top: -15px;
 color: white;
 padding-bottom: 32px;
 line-height: 24px;
+background-image: url('../img/background-mountains.jpg');
+background-repeat: no-repeat;
+  background-size: 1200px 217px;
 }
 .advantages h2 {
   font-size: 16px;
   font-family: "PT Sans", Arial, sans-serif;
+  font-weight: bold;
 }
 .advantages input {
   font-size: 14px;
   font-family: "PT Sans", Arial, sans-serif;
-
+  font-weight: regular;
+color: white;
 }
 .advantage {
   width: 1200px;
@@ -159,8 +198,6 @@ line-height: 24px;
   width: 400px;
   text-align: center;
   padding-top: 59px;
-  padding-left: 73px;
-  padding-right: 76px;
   padding-bottom: 86px;
 }
 .search {
@@ -171,11 +208,15 @@ line-height: 24px;
   padding-top: 53px;
   font-size: 30px;
   font-family: "PT Sans", Arial, sans-serif;
+  font-weight: bold;
 }
 .search p {
   padding-bottom: 51px;
   font-size: 14px;
   font-family: "PT Sans", Arial, sans-serif;
+  font-weight: regular;
+  width: 490px;
+  padding-left: 383px;
 }
 .search a {
   width: 500px;
@@ -189,6 +230,7 @@ line-height: 24px;
   text-decoration: none;
   font-size: 21px;
   font-family: "PT Sans", Arial, sans-serif;
+  font-weight: bold;
 }
 .advantages input {
   color: white;
@@ -203,18 +245,19 @@ input:checked {
 }
 .table {
   position: absolute;
-  margin-left: 312px;
+  margin-left: 321px;
   background: white;
   padding-top: 55px;
-  padding-left: 59px;
-  padding-bottom: 56px;
-  padding-right: 59px;
+  padding-left: 48px;
+  padding-bottom: 55px;
+  padding-right: 52px;
 }
 label {
     display: block;
     margin-bottom: 10px;
     font-size: 14px;
     font-family: "PT Sans", Arial, sans-serif;
+    font-weight: bold;
 }
 input {
   font-size: 14px;
@@ -236,6 +279,9 @@ input[type="date"] {
     color: #ffffff;
     background: #81b3d2;
     border: none;
+    font-size: 21px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: bold;
 }
 .direction {
   width: 1200px;
@@ -245,6 +291,7 @@ input[type="date"] {
 .direction a {
   font-size: 21px;
 font-family: "PT Sans", Arial, sans-serif;
+font-weight: bold;
 }
 .hashtag {
   width: 400px;
@@ -304,6 +351,7 @@ font-family: "PT Sans", Arial, sans-serif;
   font-size: 21px;
 font-family: "PT Sans", Arial, sans-serif;
 line-height: 16px;
+font-weight: bold;
 }
 .name h1 a {
     color: black;
@@ -313,6 +361,7 @@ line-height: 16px;
   font-size: 14px;
 font-family: "PT Sans", Arial, sans-serif;
 line-height: 20px;
+font-weight: regular
 }
 .hotel-image {
   width: 165px;
@@ -364,6 +413,7 @@ font-family: "PT Sans", Arial, sans-serif;
   color: white;
   font-size: 14px;
 font-family: "PT Sans", Arial, sans-serif;
+font-weight: bold;
 }
 .reserve {
   background: #766357;
@@ -374,6 +424,7 @@ font-family: "PT Sans", Arial, sans-serif;
   color: white;
   font-size: 14px;
 font-family: "PT Sans", Arial, sans-serif;
+font-weight: bold;
 }
 .value {
   padding-top: 65px;
@@ -390,15 +441,24 @@ font-family: "PT Sans", Arial, sans-serif;
   line-height: 3;
   font-size: 14px;
 font-family: "PT Sans", Arial, sans-serif;
+font-weight: bold;
 }
 .result {
   width: 165px;
   color: black;
   padding-left: 72px;
 }
+.result h3 {
+  font-size: 21px;
+font-family: "PT Sans", Arial, sans-serif;
+font-weight: bold;
+}
 .assortment {
   width: 780px;
 padding-top: 23px;
+font-size: 12px;
+font-family: "PT Sans", Arial, sans-serif;
+font-weight: regular;
 }
 .link-blue {
   text-decoration: none;
