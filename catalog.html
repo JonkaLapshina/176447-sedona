@@ -12,7 +12,7 @@
   <body>
     <header>
       <nav class="navigation">
-        <ul>
+        <ul class="active">
           <li><a href="#"> Информация </a></li>
           <li><a href="#"> Фото и видео </a></li>
           <li><a href="#"> Карта штата </a></li>
@@ -27,15 +27,15 @@
       <form action="https://echo.htmlacademy.ru" method="get" class="services">
         <div class="utilities">
           <h2> Инфраструктура: </h2>
-          <input type="checkbox" checked> Бассейн<br>
-          <input type="checkbox"> Парковка<br>
-          <input type="checkbox"> Wi-Fi
+          <label><input type="checkbox" checked> Бассейн</label>
+          <label><input type="checkbox"> Парковка</label>
+          <label><input type="checkbox"> Wi-Fi</label>
         </div>
         <div class="housing">
           <h2> Тип жилья: </h2>
-          <input type="checkbox" checked> Гостиница <br>
-          <input type="checkbox" checked> Мотель <br>
-          <input type="checkbox" checked> Апартаменты
+          <label><input type="checkbox" checked> Гостиница</label>
+          <label><input type="checkbox" checked> Мотель</label>
+          <label><input type="checkbox" checked> Апартаменты</label>
         </div>
         <div class="price">
           <h2> Стоимость в сутки (Р): </h2>
@@ -50,13 +50,17 @@
         <h3>Найдено: 3</h3>
       </div>
       <div class="assortment"> <span>Сортировка: </span>
-        <a href="#" class="link-blue"> По цене </a>
+        <a href="#" class="active">  По цене </a>
         <a href="#" class="link-brown"> По типу </a>
         <a href="#" class="link-brown"> По рейтингу </a>
       </div>
       <div class="arrow">
-        <a href="#"> <img src="img/icons/pointerup.png" height="11" width="10" alt="pointerup" class="pointerup"></a>
-        <a href="#"><img src="img/icons/pointerdown.png" height="11" width="10" alt="pointerdown" class="pointerdown"></a>
+        <a href="#">
+          <div class="triangle-up"> </div>
+        </a>
+        <a href="#">
+          <div class="triangle-down active"> </div>
+        </a>
       </div>
     </section>
     <article class="hotel">
@@ -109,7 +113,7 @@
         <a href="#" class="social"> <img src="img/icons/youtube.png" height="16" width="20" alt="youtube"> </a>
       </div>
       <div class="hashtag">
-        <a href="#"> <span>WEBSITE BY </span> <img src="img/icons/htmlacademy.png" height="39" width="113" alt="htmlacademy"> </a>
+        <a href="#"> <span>WEBSITE BY </span> <img src="img/icons/htmlacademy.png" height="39" width="113" alt="htmlacademy" class="htmllogo"> </a>
       </div>
     </footer>
   </body>
