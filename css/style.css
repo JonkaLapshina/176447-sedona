@@ -502,8 +502,6 @@ font-weight: bold;
 }
 .value {
   width: 111px;
-  padding-top: 31px;
-  padding-bottom: 30px;
 }
 .rating {
   width: 111px;
@@ -518,7 +516,6 @@ font-weight: bold;
   font-size: 14px;
 font-family: "PT Sans", Arial, sans-serif;
 font-weight: bold;
-margin-right: 75px;
 }
 .fourstars {
   padding-bottom: 47px;
