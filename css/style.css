@@ -311,6 +311,8 @@ label:first-child {
   width: 112px;
   height: 39px;
   background:#fcfcfb url(../img/icons/htmlacademy.png);
+margin-left: 80px;
+margin-top: -30px;
 }
 .htmllogo:hover {
 background:url(../img/icons/blue-html.png);
@@ -328,12 +330,10 @@ color:#000000;
 .hashtag a {
   text-decoration: none;
   color: black;
-}
-.hashtag a {
+margin-left: -350px;
   font-size: 14px;
 font-family: "PT Sans", Arial, sans-serif;
 font-weight: bold;
-padding-left: 0px;
 }
 .links {
   width: 400px;
@@ -501,6 +501,7 @@ font-weight: bold;
   background: #503e33;
 }
 .value {
+  width: 111px;
   padding-top: 31px;
   padding-bottom: 30px;
 }
@@ -519,9 +520,17 @@ font-family: "PT Sans", Arial, sans-serif;
 font-weight: bold;
 margin-right: 75px;
 }
-.stars {
+.fourstars {
   padding-bottom: 47px;
-  padding-right: 0px;
+  margin-left: 22px;
+}
+.twostars {
+  padding-bottom: 47px;
+  margin-left: 65px;
+}
+.threestars {
+  padding-bottom: 47px;
+  margin-left: 40px;
 }
 .result {
   width: 165px;
@@ -587,9 +596,8 @@ height: 0;
 border-left: 5px solid transparent;
 border-right: 5px solid transparent;
 border-bottom: 10px solid #cccccc;
-position: absolute;
-right: 108px;
-bottom: 305px;
+margin-left: 90px;
+margin-top: 28px;
    }
 .triangle-down {
    	width: 0;
@@ -597,9 +605,8 @@ bottom: 305px;
    	border-left: 5px solid transparent;
    	border-right: 5px solid transparent;
    	border-top: 10px solid #81b3d2;
-    position: absolute;
-    right: 95px;
-    bottom: 305px;
+    margin-left: 111px;
+    margin-top: -10px;
    }
 .services {
   width: 1200px;
