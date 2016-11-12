@@ -35,21 +35,30 @@
       <form action="https://echo.htmlacademy.ru" method="get" class="services">
         <div class="utilities">
           <h2> Инфраструктура: </h2>
-          <label><input type="checkbox" checked> Бассейн</label>
-          <label><input type="checkbox"> Парковка</label>
-          <label><input type="checkbox"> Wi-Fi</label>
+          <label class="checkbox"><input type="checkbox" checked> <span class="checkbox-indicator"></span>Бассейн</label>
+          <label class="checkbox"><input type="checkbox" disabled> <span class="checkbox-indicator"></span>Парковка</label>
+          <label class="checkbox"><input type="checkbox"> <span class="checkbox-indicator"></span>Wi-Fi</label>
         </div>
         <div class="housing">
           <h2> Тип жилья: </h2>
-          <label><input type="checkbox" checked> Гостиница</label>
-          <label><input type="checkbox" checked> Мотель</label>
-          <label><input type="checkbox" checked> Апартаменты</label>
+          <label class="checkbox"><input type="checkbox" checked> <span class="checkbox-indicator"></span>Гостиница</label>
+          <label class="checkbox"><input type="checkbox" checked><span class="checkbox-indicator"></span> Мотель</label>
+          <label class="checkbox"><input type="checkbox" checked> <span class="checkbox-indicator"></span>Апартаменты</label>
         </div>
         <div class="price">
-          <h2> Стоимость в сутки (Р): </h2>
-          <input type="number" value="от 0">
-          <input type="number" value="до 3000">
-          <input type="submit" value="Показать">
+          <div class="filter-range-title"> Стоимость в сутки (Р): </div>
+          <div class="price-controls">
+            <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+            <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+          </div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
+          </div>
+          <button class="btn-transparent" type="submit">Показать</button>
         </div>
       </form>
     </section>

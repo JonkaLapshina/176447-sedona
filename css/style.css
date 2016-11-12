@@ -246,21 +246,23 @@ font-weight: regular;
   margin-left: 321px;
   background: white;
   padding-top: 55px;
-  padding-left: 48px;
+  padding-left: 42px;
   padding-bottom: 55px;
-  padding-right: 52px;
+  padding-right: 46px;
 }
 label {
     display: block;
-    margin-bottom: 10px;
     font-size: 14px;
     font-family: "PT Sans", Arial, sans-serif;
     font-weight: bold;
 }
 input {
+  margin-left: 17px;
   font-size: 14px;
 font-family: "PT Sans", Arial, sans-serif;
 background-color: #f2f2f2;
+font-weight: bold;
+line-height: 21px;
   }
 input:hover {
   background-color: #ebebeb;
@@ -269,18 +271,92 @@ input:active {
   background-color: #ffffff;
 }
 input[type="text"] {
-
-    margin-bottom:10px;
-    padding: 2px 5px;
-    border: 1px solid #cccccc;
+    margin-bottom: 29px;
 }
-label:first-child {
-  width: 345px;
+input[name="check-in"] {
+  width: 105px;
+  padding-left: 15px;
+  padding-right: 225px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-.map input[type="submit"] {
+input[name="leaving"] {
+  width: 105px;
+  padding-left: 15px;
+  padding-right: 225px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+input[name="adults"]{
+  text-align: center;
+  width: 12px;
+    padding: 15px 15px 15px;
+    margin-left: -10px;
+    margin-right: -23px;
+}
+input[name="children"]{
+  text-align: center;
+  width: 12px;
+    padding: 15px 15px 15px;
+    margin-left: -5px;
+    margin-right: -78px;
+}
+input.minus-grey {
+  position: relative;
+    top: 18px;
+  background-image: url('../img/icons/minus-grey.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+background-size: 12px 3px;
+   border: none;
+   width: 40px;
+   height: 51px;
+}
+input.minus-grey:first-of-type {
+  left: -5px;
+}
+input.plus-grey {
+  position: relative;
+  top: 18px;
+  background-image: url('../img/icons/plus-grey.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+background-size: 12px 12px;
+ border: none;
+width: 40px;
+height: 51px;
+}
+input.plus-grey:last-of-type {
+  right: -55px;
+}
+input[class='minus-grey']:hover {
+  background-image: url('../img/icons/minus-black.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 12px 3px;
+}
+input[class='plus-grey']:hover {
+  background-image: url('../img/icons/plus-black.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 12px 12px;
+}
+input[class='minus-grey']:active {
+  background-image: url('../img/icons/minus-blue.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 12px 3px;
+}
+input[class='plus-grey']:active {
+  background-image: url('../img/icons/plus-blue.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 12px 12px;
+}
+.map input[class='search'] {
     display: inline-block;
     margin: 0 5px;
-    padding: 17px 196px;
+    padding: 16px 196px;
     color: #ffffff;
     background-color: #81b3d2;
     border: none;
@@ -288,11 +364,35 @@ label:first-child {
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: bold;
 }
-.map input[type="submit"]:hover {
+.map input[class='search']:hover {
   background-color: #669ec0;
 }
-.map input[type="submit"]:active {
+.map input[class='search']:active {
   background-color: #5496bd;
+}
+input[type="submit"]:focus, input[type="text"]:focus {
+        outline : none;
+        background-color: #f2f2f2;
+    }
+input.date-grey {
+  background-image: url('../img/icons/date-grey.png');
+  background-repeat: no-repeat;
+  background-size: 21px 22px;
+  background-position: 95% 50%;
+}
+input.date-grey:hover {
+background:url("../img/icons/date-black.png");
+background-repeat: no-repeat;
+background-size: 21px 22px;
+background-position: 95% 50%;
+background-color: #f2f2f2;
+}
+input.date-grey:active {
+background:url("../img/icons/date-blue.png");
+background-repeat: no-repeat;
+background-size: 21px 22px;
+background-position: 95% 50%;
+background-color: #f2f2f2;
 }
 .direction {
   width: 1200px;
@@ -310,7 +410,7 @@ label:first-child {
   display: block;
   width: 112px;
   height: 39px;
-  background:#fcfcfb url(../img/icons/htmlacademy.png);
+  background: url(../img/icons/htmlacademy.png);
 margin-left: 80px;
 margin-top: -30px;
 }
@@ -361,14 +461,13 @@ font-weight: bold;
   padding: 13px 18px 14px 17px;
 }
 .links a:last-child {
-  padding: 16px 13px 16px 13px;
+  padding: 15px 13px 15px 13px;
 }
 .advantages {
   width: 1200px;
   display: flex;
-padding-top: 30px;
+padding-top: 15px;
 color: white;
-padding-bottom: 32px;
 line-height: 24px;
 background-image: url('../img/background-mountains.jpg');
 background-repeat: no-repeat;
@@ -389,8 +488,57 @@ color: white;
 .advantages input {
   color: white;
 }
-input:checked {
-  background: white;
+.checkbox {
+  position: relative;
+  cursor: pointer;
+  padding-left: 30px;
+  padding-bottom: 25px;
+}
+.checkbox input[type="checkbox"]{
+  display: none;
+}
+.checkbox input[type="checkbox"]+ .checkbox-indicator {
+  position: absolute;
+  top: -3px;
+  left: -20px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+}
+.checkbox input[type="checkbox"]:checked+ .checkbox-indicator::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 1px;
+  width: 11px;
+  height: 4px;
+  background-color: #ffffff;
+}
+.checkbox input[type="checkbox"]:checked+ .checkbox-indicator::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 5px;
+  width: 22px;
+  height: 4px;
+  background-color: #ffffff;
+}
+.checkbox input[type="checkbox"]:checked+ .checkbox-indicator::before {
+  transform: rotate(45deg);
+}
+.checkbox input[type="checkbox"]:checked+ .checkbox-indicator::after {
+  transform: rotate(-45deg);
+}
+.checkbox input[type="checkbox"]+ .checkbox-indicator:hover {
+  border: 2px solid #ffffff;
+}
+.checkbox input[type="checkbox"]:checked+ span:hover:before,
+ .checkbox input[type="checkbox"]:checked+ span:hover:after {
+  background-color: #ffffff;
+}
+.checkbox input[type="checkbox"]:disabled {
+  background: #6a6a6a;
 }
 .utilities {
   width: 220px;
@@ -398,6 +546,107 @@ input:checked {
 }
 .utilities label {
   width: 112px;
+}
+.price {
+  width: 330px;
+margin-top: 5px;
+margin-left: 175px;
+color: #ffffff;
+text-transform: uppercase;
+}
+.filter-range-title {
+  margin-bottom: 9px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+.price-controls {
+  position: relative;
+  height: 36px;
+   font-size: 0;
+  margin-bottom: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+}
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+  cursor: pointer;
+}
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+.price-controls input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+}
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+ box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+ cursor: pointer;
+}
+.range-toggle-min {
+  left: 0;
+}
+.range-toggle-max {
+  left: 80%;
+}
+.range-toggle:hover {
+  background: #1c4f80;
+}
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.btn-transparent:hover {
+  color: #000000;
+  background: #ffffff;
 }
 .hotel {
   box-sizing: border-box;
@@ -603,7 +852,7 @@ margin-top: 28px;
    	border-right: 5px solid transparent;
    	border-top: 10px solid #81b3d2;
     margin-left: 111px;
-    margin-top: -10px;
+    margin-top: -12px;
    }
 .services {
   width: 1200px;
