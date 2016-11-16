@@ -533,6 +533,12 @@ input:hover {
 input:active {
   background-color: #ffffff;
 }
+button:hover {
+  background-color: #ebebeb;
+}
+button:active {
+  background-color: #ffffff;
+}
 label[for="dg"] {
   margin-right: 18px;
   margin-left: -5px;
@@ -554,9 +560,10 @@ input[value="2"]{
   margin-left: -5px;
   margin-right: -5px;
 }
-input[type="image"]{
+button {
   width: 40px;
-  padding-top: 7px;
+  padding-top: 40px;
+
 }
 label[for="adults"] {
   margin-right: 40px;
@@ -590,13 +597,13 @@ input[id="search"]:active {
 input[type="submit"]:focus, input[type="text"]:focus {
         background-color: #f2f2f2;
     }
-input[id="minus"] {
+.minus {
         display: inline-block;
         vertical-align: middle;
         font-size: 0;
         position: relative;
             }
-input[id="minus"]::before {
+.minus::before {
           content: "";
           position: absolute;
           left:50%;
@@ -608,13 +615,37 @@ input[id="minus"]::before {
             height: 3px;
             background-position: -10px -701px;
            }
-input[id="plus"] {
+           .minus:hover::before {
+                     content: "";
+                     position: absolute;
+                     left:50%;
+                     top: 50%;
+                       transform: translate(-50%, -50%);
+                       background-image: url("../img/sprite.png");
+                       background-repeat: no-repeat;
+                       width: 12px;
+                       height: 3px;
+                       background-position: -10px -655px;
+                      }
+                      .minus:active::before {
+                                content: "";
+                                position: absolute;
+                                left:50%;
+                                top: 50%;
+                                  transform: translate(-50%, -50%);
+                                  background-image: url("../img/sprite.png");
+                                  background-repeat: no-repeat;
+                                  width: 12px;
+                                  height: 3px;
+                                  background-position: -10px -678px;
+                                 }
+.plus {
           display: inline-block;
           vertical-align: middle;
           font-size: 0;
           position: relative;
         }
-input[id="plus"]::before {
+.plus::before {
           content: "";
           position: absolute;
           left:50%;
@@ -626,6 +657,30 @@ input[id="plus"]::before {
           height: 11px;
           background-position: -10px -786px;
         }
+        .plus:hover::before {
+                  content: "";
+                  position: absolute;
+                  left:50%;
+                  top: 50%;
+                    transform: translate(-50%, -50%);
+                    background-image: url("../img/sprite.png");
+                    background-repeat: no-repeat;
+                    width: 11px;
+                    height: 11px;
+                    background-position: -10px -724px;
+                   }
+                   .plus:active::before {
+                             content: "";
+                             position: absolute;
+                             left:50%;
+                             top: 50%;
+                               transform: translate(-50%, -50%);
+                               background-image: url("../img/sprite.png");
+                               background-repeat: no-repeat;
+                               width: 11px;
+                               height: 11px;
+                               background-position: -10px -755px;
+                              }
 .map a {
     display: inline-block;
     vertical-align: middle;
@@ -1444,24 +1499,24 @@ font-weight: regular;
     height: 10px;
     background-position: -10px -877px;
    }
-.pointerup:hover {
+.pointerup:hover::before {
   content: "";
 display: inline-block;
     top: 50%;
     left: 50%;
-  transform: translate(-150%, -150%);
+  transform: translate(-50%, -50%);
      background-image: url("../img/sprite.png");
      background-repeat: no-repeat;
      width: 11px;
      height: 10px;
      background-position: -10px -817px;
    }
-.pointerup:active {
+.pointerup:active::before {
   content: "";
 display: inline-block;
     top: 50%;
     left: 50%;
-      transform: translate(-150%, -150%);
+      transform: translate(-50%, -50%);
      background-image: url("../img/sprite.png");
      background-repeat: no-repeat;
      width: 11px;
