@@ -197,7 +197,6 @@ body {
       background-position: top;
 }
 .navigation {
-    box-sizing: border-box;
   width: 1200px;
   padding-bottom: 30px;
   padding-left: 72px;
@@ -222,6 +221,18 @@ li a {
 }
 .navigation li {
   width: 240px;
+}
+.navigation li:first-child {
+  box-sizing: border-box;
+  padding-right: 240px;
+}
+.navigation li:last-child {
+  box-sizing: border-box;
+  margin-left: 30px;
+}
+.navigation li:nth-child(3){
+  box-sizing: border-box;
+  margin-left: 30px;
 }
 .navigation li:nth-child(2){
 margin-right: 240px;
@@ -468,7 +479,7 @@ margin-left: 450px;
   width: 302px;
 }
 .search p {
-  padding-bottom: 65px;
+  padding-bottom: 70px;
   font-size: 14px;
   font-family: "PT Sans", Arial, sans-serif;
   line-height: 1.5;
@@ -499,9 +510,9 @@ margin-left: 450px;
   margin-left: 317px;
   background: white;
   padding-top: 55px;
-  padding-left: 34px;
+  padding-left: 54px;
   padding-bottom: 55px;
-  padding-right: 48px;
+  padding-right: 43px;
 }
 label {
     font-size: 14px;
@@ -524,20 +535,36 @@ input:active {
 }
 label[for="dg"] {
   margin-right: 18px;
+  margin-left: -5px;
 }
 input[id="dg"]{
-  padding: 10px 208px 10px 16px;
+  padding: 10px 183px 8px 16px;
+  margin-bottom: -6px;
+  margin-left: 10px;
 }
-input[id="number"], input[id="minus"], input[id="plus"]{
+input[value="0"]{
   width: 8px;
-  padding: 15px;
+  padding: 11px 15px;
+  margin-right: -5px;
+margin-left: -5px;
+}
+input[value="2"]{
+  width: 8px;
+  padding: 11px 15px;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+input[type="image"]{
+  width: 40px;
+  padding-top: 7px;
 }
 label[for="adults"] {
-  margin-right: 41px;
-  margin-left: -20px;
+  margin-right: 40px;
+  margin-left: -10px;
 }
 label[for="children"] {
-  margin-left: 52px;
+  margin-left: 48px;
+  margin-right: 20px;
 }
 input[id="search"] {
   background-color: #81b3d2;
@@ -548,97 +575,96 @@ font-family: "PT Sans", Arial, sans-serif;
 }
 div.date-grey {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 div.amount {
   display: inline-block;
   margin-bottom: 54px;
 }
-/*input[class="date-grey"] {
-  padding-left: 15px;
-  padding-right: 295px;
-  margin-bottom: 10px;
-}
-input[name="adults"]{
-  text-align: center;
-  width: 12px;
-    padding: 10px 15px 10px;
-    margin-left: -10px;
-    margin-right: -23px;
-    border: none;
-}
-input[name="children"]{
-  text-align: center;
-  width: 12px;
-    padding: 10px 15px 10px;
-    margin-left: -5px;
-    margin-right: -78px;
-    border: none;
-}
-input[class="date-grey"] {
-        display: inline-block;
-        font-size: 0;
-        position: relative;
-        border: none;
-        background-color: none;
-    }
-input[class="date-grey"]::before {
-    content: "";
-    position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-image: url("../img/sprite.png");
-      background-repeat: no-repeat;
-      width: 21px;
-      height: 22px;
-      background-position: -10px -237px;
-    }
-input[class='minus-grey']:hover {
-  background-image: url('../img/icons/minus-black.png');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: 12px 3px;
-}
-input[class='plus-grey']:hover {
-  background-image: url('../img/icons/plus-black.png');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: 12px 12px;
-}
-input[class='minus-grey']:active {
-  background-image: url('../img/icons/minus-blue.png');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: 12px 3px;
-}
-input[class='plus-grey']:active {
-  background-image: url('../img/icons/plus-blue.png');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: 12px 12px;
-}
-.map input[class='search'] {
-    display: inline-block;
-    margin-top: 27px;
-    margin-left: 2px;
-    padding: 16px 197px 16px 195px;
-    color: #ffffff;
-    background-color: #81b3d2;
-    border: none;
-    font-size: 21px;
-  font-family: "PT Sans", Arial, sans-serif;
-  font-weight: bold;
-}
-.map input[class='search']:hover {
+input[id="search"]:hover {
   background-color: #669ec0;
 }
-.map input[class='search']:active {
+input[id="search"]:active {
   background-color: #5496bd;
 }
 input[type="submit"]:focus, input[type="text"]:focus {
         background-color: #f2f2f2;
-    }*/
+    }
+input[id="minus"] {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 0;
+        position: relative;
+            }
+input[id="minus"]::before {
+          content: "";
+          position: absolute;
+          left:50%;
+          top: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url("../img/sprite.png");
+            background-repeat: no-repeat;
+            width: 12px;
+            height: 3px;
+            background-position: -10px -701px;
+           }
+input[id="plus"] {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 0;
+          position: relative;
+        }
+input[id="plus"]::before {
+          content: "";
+          position: absolute;
+          left:50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          background-image: url("../img/sprite.png");
+          background-repeat: no-repeat;
+          width: 11px;
+          height: 11px;
+          background-position: -10px -786px;
+        }
+.map a {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+    position: relative;
+        }
+.map a::before {
+      content: "";
+      display: inline-block;
+        margin-left: -50px;
+        margin-top: -10px;
+        background-image: url("../img/sprite.png");
+        background-repeat: no-repeat;
+        width: 21px;
+        height: 22px;
+        background-position: -10px -237px;
+       }
+.map a:hover::before {
+        content: "";
+        display: inline-block;
+        margin-left: -50px;
+        margin-top: -10px;
+        background-image: url("../img/sprite.png");
+        background-repeat: no-repeat;
+        width: 21px;
+        height: 22px;
+        background-position: -10px -153px;
+    }
+.map a:active::before {
+        content: "";
+        display: inline-block;
+        margin-left: -50px;
+        margin-top: -10px;
+        background-image: url("../img/sprite.png");
+        background-repeat: no-repeat;
+        width: 21px;
+        height: 22px;
+        background-position: -10px -195px;
+    }
 .direction-index {
   position: absolute;
   background-image:url("../img/whitebottom.jpg");
@@ -1350,19 +1376,6 @@ font-weight: regular;
         font-size: 0;
         position: relative;
     }
-.arrow::before {
-    content: "";
-    position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-image: url("../img/sprite.png");
-      background-repeat: no-repeat;
-    }
-/*.arrow {
-  width: 111px;
-  padding-right: 15px;
-}*/
 .arrow .active {
   color: #81b3d2;
 }
@@ -1433,10 +1446,10 @@ font-weight: regular;
    }
 .pointerup:hover {
   content: "";
-  display: inline-block;
+display: inline-block;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+  transform: translate(-150%, -150%);
      background-image: url("../img/sprite.png");
      background-repeat: no-repeat;
      width: 11px;
@@ -1448,7 +1461,7 @@ font-weight: regular;
 display: inline-block;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+      transform: translate(-150%, -150%);
      background-image: url("../img/sprite.png");
      background-repeat: no-repeat;
      width: 11px;
