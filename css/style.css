@@ -228,7 +228,6 @@ li a {
 }
 
 .navigation li {
-  background: #f2f2f2;
   max-width: 240px;
 }
 
@@ -588,7 +587,7 @@ li a {
   padding-top: 55px;
   padding-left: 52px;
   padding-bottom: 57px;
-  padding-right: 52px;
+  padding-right: 53px;
 }
 
 label {
@@ -628,8 +627,9 @@ label[for="dg"] {
 
 input[id="dg"]:first-of-type {
   padding-top: 10px;
-  padding-right: 183px;
+  padding-right: 185px;
   padding-bottom: 8px;
+  padding-left: 10px;
   margin-bottom: -6px;
   margin-left: 10px;
 }
@@ -637,7 +637,7 @@ input[id="dg"]:first-of-type {
 input[id="dg"]:last-of-type {
   padding-left: 10px;
   padding-top: 10px;
-  padding-right: 183px;
+  padding-right: 185px;
   padding-bottom: 8px;
   margin-bottom: -6px;
   margin-left: 10px;
@@ -856,12 +856,16 @@ input[type="submit"]:focus, input[type="text"]:focus {
   margin-top: -125px;
 }
 
+.direction-index .hashtag a:first-of-type {
+  margin-bottom: 50px;
+}
+
 .direction {
   box-sizing: border-box;
   width: 1200px;
   display: flex;
   text-align: center;
-  padding-top: 26px;
+  padding-top: 24px;
   padding-bottom: 36px;
 }
 
@@ -876,6 +880,7 @@ input[type="submit"]:focus, input[type="text"]:focus {
   font-weight: bold;
   text-decoration: none;
   color: #000000;
+  margin-bottom: -10px;
 }
 
 .htmllogo {
@@ -1004,13 +1009,13 @@ input[type="submit"]:focus, input[type="text"]:focus {
 }
 
 .advantages {
-  width: 1200px;
+  max-width: 1200px;
   display: flex;
   padding-top: 12px;
   padding-bottom: 20px;
   color: white;
-  line-height: 24px;
-  margin-top: -30px;
+  line-height: 22px;
+  margin-top: -33px;
   background-image: url('../img/background-mountains.jpg');
   background-repeat: no-repeat;
   background-size: 1200px 217px;
@@ -1031,6 +1036,11 @@ input[type="submit"]:focus, input[type="text"]:focus {
 
 .advantages input {
   color: white;
+}
+
+.advantages label {
+  font-weight: normal;
+  padding-top: 5px;
 }
 
 
@@ -1239,11 +1249,13 @@ input[type="checkbox"]:checked:disabled+label::before {
 }
 
 .housing h2 {
-  margin-left: 2px;
+  margin-left: -5px;
+  margin-bottom: 20px;
 }
 
 .housing {
-  padding-left: 30px;
+  padding-left: 40px;
+  line-height: 20px;
 }
 
 .price {
@@ -1257,8 +1269,8 @@ input[type="checkbox"]:checked:disabled+label::before {
 .filter-range-title {
   margin-left: -10px;
   margin-bottom: 9px;
-  font-weight: 600;
-  font-size: 16px;
+  font-weight: 60;
+  font-size: 14px;
   line-height: 21px;
 }
 
@@ -1349,8 +1361,8 @@ input[type="checkbox"]:checked:disabled+label::before {
   margin: 0 auto;
   margin-left: 85px;
   margin-bottom: 30px;
-  padding: 6px 108px 6px 30px;
-  font-size: 14px;
+  padding: 6px 100px 6px 34px;
+  font-size: 12px;
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
@@ -1376,7 +1388,7 @@ input[type="checkbox"]:checked:disabled+label::before {
   display: flex;
   padding-left: 72px;
   padding-right: 72px;
-  padding-top: 20px;
+  padding-top: 15px;
   padding-bottom: 24px;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -1385,12 +1397,17 @@ input[type="checkbox"]:checked:disabled+label::before {
   border-top: 1px solid #e5e5e5;
 }
 
+.hotel:first-of-type span {
+  padding-bottom: 30px;
+}
+
 .hotel:nth-of-type(2) span {
-  margin-right: 60px;
+  margin-right: 50px;
 }
 
 .hotel:last-of-type {
-  margin-top: -8px;
+  margin-top: -1px;
+  margin-bottom: 10px;
 }
 
 .hotel:last-of-type span {
@@ -1443,7 +1460,7 @@ input[type="checkbox"]:checked:disabled+label::before {
   display: flex;
   color: #766357;
   padding-right: 71px;
-  margin-top: -5px;
+  margin-top: -9px;
 }
 
 .sorting h3 {
@@ -1527,9 +1544,8 @@ input[type="checkbox"]:checked:disabled+label::before {
   height: 17px;
   font-size: 0;
   position: relative;
-  margin-top: 10px;
-  margin-bottom: 40px;
-  margin-left: 20px;
+  margin-left: 22px;
+  margin-bottom: 20px;
 }
 
 .fourstars::before {
@@ -1552,7 +1568,7 @@ input[type="checkbox"]:checked:disabled+label::before {
   height: 17px;
   font-size: 0;
   position: relative;
-  margin-top: 5px;
+  margin-top: 14px;
   margin-bottom: 40px;
   margin-left: 70px;
 }
@@ -1580,6 +1596,7 @@ input[type="checkbox"]:checked:disabled+label::before {
   font-size: 0;
   position: relative;
   margin-left: 45px;
+  margin-top: 12px;
 }
 
 .threestars::before {
@@ -1610,10 +1627,10 @@ input[type="checkbox"]:checked:disabled+label::before {
 
 .assortment {
   width: 780px;
-  padding-top: 30px;
+  padding-top: 28px;
   font-size: 12px;
   font-family: "PT Sans", Arial, sans-serif;
-  font-weight: regular;
+  padding-bottom: 35px;
 }
 
 .assortment .active {
@@ -1641,8 +1658,8 @@ input[type="checkbox"]:checked:disabled+label::before {
 
 .arrow {
   display: inline-block;
-  margin-left: 65px;
-  margin-top: 20px;
+  margin-left: 68px;
+  margin-top: 25px;
   vertical-align: middle;
   width: 21px;
   height: 22px;
@@ -1681,7 +1698,7 @@ input[type="checkbox"]:checked:disabled+label::before {
   display: inline-block;
   vertical-align: middle;
   margin-top: 8px;
-  margin-left: 9px;
+  margin-left: 12px;
   width: 11px;
   height: 10px;
   font-size: 0;
