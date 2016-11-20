@@ -602,7 +602,7 @@ iframe {
 .map label {
   font-size: 14px;
   font-family: "PT Sans", Arial, sans-serif;
-  font-weight: и
+  font-weight: bold;
 }
 
 .map input {
@@ -686,9 +686,7 @@ div .date-grey {
   margin-bottom: 30px;
 }
 
-.date-grey span {
-  padding-bottom: -230px;
-}
+.date-grey span {}
 
 div.amount {
   display: inline-block;
@@ -856,10 +854,6 @@ input[type="submit"]:focus, input[type="text"]:focus {
   padding-top: 35px;
   padding-bottom: 36px;
   margin-top: -125px;
-}
-
-.direction-index .hashtag a:first-of-type {
-  margin-bottom: 50px;
 }
 
 .direction {
