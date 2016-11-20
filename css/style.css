@@ -1,6 +1,6 @@
 @font-face {
   font-family: "PT Sans";
-  src: url(../fonts/ptsans.woff) format('woff'), url(../fonts/ptsans.woff2) format('woff2'), url(../fonts/ptsansbold.woff) format('woff'), url(../fonts/ptsansbold.woff2) format('woff2');
+  src: url(../fonts/web/ptsans.woff) format('woff'), url(../fonts/web/ptsans.woff2) format('woff2'), url(../fonts/web/ptsansbold.woff) format('woff'), url(../fonts/web/ptsansbold.woff2) format('woff2');
 }
 
 .container {
@@ -204,7 +204,7 @@ body {
   max-width: 1200px;
   margin-bottom: 30px;
   margin-left: 72px;
-  margin-top: -5px;
+  margin-top: -7px;
 }
 
 ul {
@@ -275,7 +275,7 @@ li a {
   position: absolute;
   top: 27px;
   left: 45%;
-  margin-top: -25px;
+  margin-top: -27px;
 }
 
 @media screen and (max-width:1200px) {
@@ -551,17 +551,19 @@ li a {
 }
 
 .search p {
-  padding-bottom: 65px;
+  padding-bottom: 35px;
   font-size: 14px;
   font-family: "PT Sans", Arial, sans-serif;
   line-height: 1.8;
   padding-left: 5px;
 }
 
-.search a {
-  max-width: 500px;
+.search span {
+  width: 571px;
+  display: inline-block;
+  box-sizing: border-box;
   color: white;
-  margin-top: 54px;
+  //margin-top: 54px;
   background: #766357;
   padding-top: 32px;
   padding-bottom: 30px;
@@ -574,33 +576,40 @@ li a {
 }
 
 .map {
-  background-image: url("../img/map.jpg");
   text-align: center;
+  margin: 0px auto;
   max-width: 100%;
-  margin-top: 30px;
+  padding-left: 50%;
+}
+
+iframe {
+  margin-left: -600px;
 }
 
 .table {
+  width: 572px;
+  box-sizing: border-box;
   position: absolute;
-  margin-left: 317px;
+  margin-left: -286px;
   background: white;
   padding-top: 55px;
-  padding-left: 52px;
   padding-bottom: 57px;
   padding-right: 55px;
-}
-
-label {
-  font-size: 14px;
-  font-family: "PT Sans", Arial, sans-serif;
+  padding-left: 40px;
   font-weight: bold;
 }
 
-input {
+.map label {
+  font-size: 14px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: и
+}
+
+.map input {
   font-size: 14px;
   font-family: "PT Sans", Arial, sans-serif;
   background-color: #f2f2f2;
-  font-weight: bold;
+  font-weight: 900;
   line-height: 21px;
   border: none;
 }
@@ -621,26 +630,13 @@ button:active {
   background-color: #ffffff;
 }
 
-label[for="dg"] {
-  margin-right: 7px;
-}
-
-input[id="dg"]:first-of-type {
+.form-data {
+  display: inline-block;
   padding-top: 10px;
-  padding-right: 185px;
+  padding-right: 190px;
   padding-bottom: 8px;
   padding-left: 15px;
-  margin-bottom: -6px;
-  margin-left: 10px;
-}
-
-input[id="dg"]:last-of-type {
-  padding-left: 10px;
-  padding-top: 10px;
-  padding-right: 185px;
-  padding-bottom: 8px;
-  margin-bottom: -6px;
-  margin-left: 10px;
+  float: right;
 }
 
 input[value="0"] {
@@ -665,12 +661,12 @@ button {
 }
 
 label[for="adults"] {
-  margin-right: 30px;
-  margin-left: 0px;
+  margin-right: 40px;
+  margin-left: 10px;
 }
 
 label[for="children"] {
-  margin-right: 18px;
+  margin-right: 20px;
   margin-left: 44px;
 }
 
@@ -681,11 +677,17 @@ input[id="search"] {
   font-size: 21px;
   font-family: "PT Sans", Arial, sans-serif;
   margin-top: -4px;
+  margin-left: 10px;
 }
 
-div.date-grey {
+div .date-grey {
   display: block;
-  margin-bottom: 35px;
+  height: 38px;
+  margin-bottom: 30px;
+}
+
+.date-grey span {
+  padding-bottom: -230px;
 }
 
 div.amount {
@@ -799,7 +801,7 @@ input[type="submit"]:focus, input[type="text"]:focus {
 }
 
 .map a {
-  display: inline-block;
+  display: block;
   vertical-align: middle;
   font-size: 0;
   position: relative;
@@ -807,8 +809,8 @@ input[type="submit"]:focus, input[type="text"]:focus {
 
 .map a::before {
   content: "";
-  display: inline-block;
-  margin-left: -50px;
+  display: block;
+  margin-left: 442px;
   margin-top: -10px;
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
@@ -819,8 +821,8 @@ input[type="submit"]:focus, input[type="text"]:focus {
 
 .map a:hover::before {
   content: "";
-  display: inline-block;
-  margin-left: -50px;
+  display: block;
+  margin-left: 442px;
   margin-top: -10px;
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
@@ -831,8 +833,8 @@ input[type="submit"]:focus, input[type="text"]:focus {
 
 .map a:active::before {
   content: "";
-  display: inline-block;
-  margin-left: -50px;
+  display: block;
+  margin-left: 442px;
   margin-top: -10px;
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
@@ -1303,17 +1305,28 @@ input[type="checkbox"]:checked:disabled+label::before {
 }
 
 .price-controls .min-price, .price-controls .max-price {
-  width: 90px;
-  padding-left: 65px;
+  //width: 90px;
+  padding-left: 55px;
+  padding-top: 0px;
+}
+
+.price-controls span {
+  padding-top: -50px;
+}
+
+.min-price span {
+  margin-right: -15px;
 }
 
 .price-controls input {
-  width: 50px;
+  width: 55px;
+  height: 10px;
   margin: 0;
   color: inherit;
   font: inherit;
   background: none;
   border: none;
+  padding-top: -10px;
 }
 
 .range-controls {
@@ -1395,10 +1408,6 @@ input[type="checkbox"]:checked:disabled+label::before {
 
 .hotel:first-of-type {
   border-top: 1px solid #e5e5e5;
-}
-
-.hotel:first-of-type span {
-  padding-bottom: 30px;
 }
 
 .hotel:nth-of-type(2) span {
@@ -1545,7 +1554,8 @@ input[type="checkbox"]:checked:disabled+label::before {
   font-size: 0;
   position: relative;
   margin-left: 22px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  margin-top: 14px;
 }
 
 .fourstars::before {
