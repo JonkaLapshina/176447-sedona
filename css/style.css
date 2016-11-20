@@ -216,7 +216,7 @@ ul {
 li {
   list-style-type: none;
   font-weight: bold;
-  margin-top: 45px;
+  margin-top: 25px;
   margin-bottom: 21px;
 }
 
@@ -275,7 +275,7 @@ li a {
   position: absolute;
   top: 27px;
   left: 45%;
-  margin-top: -5px;
+  margin-top: -25px;
 }
 
 @media screen and (max-width:1200px) {
@@ -587,7 +587,7 @@ li a {
   padding-top: 55px;
   padding-left: 52px;
   padding-bottom: 57px;
-  padding-right: 53px;
+  padding-right: 55px;
 }
 
 label {
@@ -629,7 +629,7 @@ input[id="dg"]:first-of-type {
   padding-top: 10px;
   padding-right: 185px;
   padding-bottom: 8px;
-  padding-left: 10px;
+  padding-left: 15px;
   margin-bottom: -6px;
   margin-left: 10px;
 }
@@ -665,12 +665,12 @@ button {
 }
 
 label[for="adults"] {
-  margin-right: 40px;
-  margin-left: 2px;
+  margin-right: 30px;
+  margin-left: 0px;
 }
 
 label[for="children"] {
-  margin-right: 20px;
+  margin-right: 18px;
   margin-left: 44px;
 }
 
