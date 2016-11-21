@@ -2,7 +2,6 @@
   max-width: 1200px;
   margin: 0 auto;
   background: #ffffff;
-  //background: #ffffff;
   box-shadow: 0 0 15px 5px #dbdbdb;
 }
 
@@ -13,176 +12,176 @@
 }
 
 .sprite-disabled {
-  max-width: 26px;
-  max-height: 22px;
+  width: 26px;
+  height: 22px;
   background-position: -10px -10px;
 }
 
 .sprite-disabledempty {
-  max-width: 22px;
-  max-height: 22px;
+  width: 22px;
+  height: 22px;
   background-position: -10px -52px;
 }
 
 .sprite-blue-html {
-  max-width: 113px;
-  max-height: 39px;
+  width: 113px;
+  height: 39px;
   background-position: -10px -10px;
 }
 
 .sprite-check {
-  max-width: 26px;
-  max-height: 22px;
+  width: 26px;
+  height: 22px;
   background-position: -10px -69px;
 }
 
 .sprite-check-empty {
-  max-width: 22px;
-  max-height: 22px;
+  width: 22px;
+  height: 22px;
   background-position: -10px -111px;
 }
 
 .sprite-date-black {
-  max-width: 21px;
-  max-height: 22px;
+  width: 21px;
+  height: 22px;
   background-position: -10px -153px;
 }
 
 .sprite-date-blue {
-  max-width: 21px;
-  max-height: 22px;
+  width: 21px;
+  height: 22px;
   background-position: -10px -195px;
 }
 
 .sprite-date-grey {
-  max-width: 21px;
-  max-height: 22px;
+  width: 21px;
+  height: 22px;
   background-position: -10px -237px;
 }
 
 .sprite-facebook {
-  max-width: 10px;
-  max-height: 19px;
+  width: 10px;
+  height: 19px;
   background-position: -10px -279px;
 }
 
 .sprite-fourstars {
-  max-width: 89px;
-  max-height: 17px;
+  width: 89px;
+  height: 17px;
   background-position: -10px -318px;
 }
 
 .sprite-grey-html {
-  max-width: 113px;
-  max-height: 39px;
+  width: 113px;
+  height: 39px;
   background-position: -10px -355px;
 }
 
 .sprite-house {
-  max-width: 75px;
-  max-height: 72px;
+  width: 75px;
+  height: 72px;
   background-position: -10px -414px;
 }
 
 .sprite-htmlacademy {
-  max-width: 113px;
-  max-height: 39px;
+  width: 113px;
+  height: 39px;
   background-position: -10px -506px;
 }
 
 .sprite-meat {
-  max-width: 74px;
-  max-height: 70px;
+  width: 74px;
+  height: 70px;
   background-position: -10px -565px;
 }
 
 .sprite-minus-black {
-  max-width: 12px;
-  max-height: 3px;
+  width: 12px;
+  height: 3px;
   background-position: -10px -655px;
 }
 
 .sprite-minus-blue {
-  max-width: 12px;
-  max-height: 3px;
+  width: 12px;
+  height: 3px;
   background-position: -10px -678px;
 }
 
 .sprite-minus-grey {
-  max-width: 12px;
-  max-height: 3px;
+  width: 12px;
+  height: 3px;
   background-position: -10px -701px;
 }
 
 .sprite-plus-black {
-  max-width: 11px;
-  max-height: 11px;
+  width: 11px;
+  height: 11px;
   background-position: -10px -724px;
 }
 
 .sprite-plus-blue {
-  max-width: 11px;
-  max-height: 11px;
+  width: 11px;
+  height: 11px;
   background-position: -10px -755px;
 }
 
 .sprite-plus-grey {
-  max-width: 11px;
-  max-height: 11px;
+  width: 11px;
+  height: 11px;
   background-position: -10px -786px;
 }
 
 .sprite-pointerblack {
-  max-width: 11px;
-  max-height: 10px;
+  width: 11px;
+  height: 10px;
   background-position: -10px -817px;
 }
 
 .sprite-pointerblue {
-  max-width: 11px;
-  max-height: 10px;
+  width: 11px;
+  height: 10px;
   background-position: -10px -847px;
 }
 
 .sprite-pointerdown {
-  max-width: 11px;
-  max-height: 10px;
+  width: 11px;
+  height: 10px;
   background-position: -10px -877px;
 }
 
 .sprite-pointerup {
-  max-width: 11px;
-  max-height: 10px;
+  width: 11px;
+  height: 10px;
   background-position: -10px -907px;
 }
 
 .sprite-souvenir {
-  max-width: 64px;
-  max-height: 76px;
+  width: 64px;
+  height: 76px;
   background-position: -10px -937px;
 }
 
 .sprite-threestars {
-  max-width: 65px;
-  max-height: 17px;
+  width: 65px;
+  height: 17px;
   background-position: -10px -1033px;
 }
 
 .sprite-twitter {
-  max-width: 17px;
-  max-height: 15px;
+  width: 17px;
+  height: 15px;
   background-position: -10px -1070px;
 }
 
 .sprite-twostars {
-  max-width: 42px;
-  max-height: 17px;
+  width: 42px;
+  height: 17px;
   background-position: -10px -1105px;
 }
 
 .sprite-youtube {
-  max-width: 20px;
-  max-height: 16px;
+  width: 20px;
+  height: 16px;
   background-position: -10px -1142px;
 }
 
@@ -190,13 +189,12 @@ body {
   max-width: 100%;
   margin: 0 auto;
   background: #f2f2f2;
-  //background: #f2f2f2;
   text-transform: uppercase;
   background-position: top;
 }
 
 .navigation {
-  max-width: 1200px;
+  width: 1200px;
   margin-bottom: 30px;
   margin-left: 72px;
   margin-top: -7px;
@@ -218,7 +216,7 @@ li {
 li a {
   text-decoration: none;
   color: black;
-  font-size: 13.5px;
+  font-size: 14px;
   font-family: "PT Sans", Arial, sans-serif;
 }
 
@@ -282,11 +280,9 @@ li a {
 .intro-image {
   position: relative;
   margin-top: -30px;
-  background: url('../img/mountains.jpg') no-repeat;
+  background: url("../img/mountains.jpg") no-repeat;
   background-size: 1200px 509px;
-  max-width: 1200px;
-  max-height: 509px;
-  padding-top: 450px;
+  padding-top: 448px;
 }
 
 .welcome {
@@ -297,11 +293,11 @@ li a {
 
 .intro-image::after {
   content: "";
-  background: url('../img/bottom.png');
+  background: url("../img/bottom.png");
   background-repeat: no-repeat;
-  background-size: 1200px 62px;
+  background-size: 1200px 64px;
   display: block;
-  height: 62px;
+  height: 64px;
   z-index: 10;
 }
 
@@ -419,6 +415,8 @@ li a {
 
 .features-image {
   max-width: 800px;
+  background-color: #ff0000;
+  line-height: 0;
 }
 
 .features-item {
@@ -430,7 +428,7 @@ li a {
   width: 400px;
   text-align: center;
   background: #81b3d2;
-  color: white;
+  color: #ffffff;
 }
 
 .features-grey {
@@ -555,10 +553,10 @@ li a {
 }
 
 .search a {
-  width: 568px;
+  max-width: 568px;
   display: inline-block;
   box-sizing: border-box;
-  color: white;
+  color: #ffffff;
   margin-left: 6px;
   background: #766357;
   padding-top: 32px;
@@ -587,7 +585,7 @@ iframe {
   box-sizing: border-box;
   position: absolute;
   margin-left: -281px;
-  background: white;
+  background: #ffffff;
   padding-top: 65px;
   padding-bottom: 57px;
   padding-right: 55px;
@@ -609,6 +607,8 @@ iframe {
   line-height: 21px;
   border: none;
 }
+
+input:required {}
 
 input:hover {
   background-color: #ebebeb;
@@ -634,8 +634,9 @@ input[id="search"]:active {
   background-color: #5496bd;
 }
 
-.minus:focus, input[type="text"]:focus, .plus:focus, input[id="search"] {
-  background-color: #f2f2f2;
+input[type="text"]:focus {
+  background-color: #ffffff;
+  outline: none;
 }
 
 .form-data {
@@ -693,9 +694,8 @@ input[id="search"] {
 div .date-grey {
   display: block;
   width: 0px;
-  margin-bottom: 45px;
+  margin-bottom: 47px;
   margin-top: -20px;
-  border: 1px solid red;
   margin-left: 440px;
 }
 
@@ -1007,10 +1007,10 @@ div.amount {
   display: flex;
   padding-top: 14px;
   padding-bottom: 18px;
-  color: white;
+  color: #ffffff;
   line-height: 22px;
   margin-top: -30px;
-  background-image: url('../img/background-mountains.jpg');
+  background-image: url("../img/background-mountains.jpg");
   background-repeat: no-repeat;
   background-size: 1200px 217px;
   opacity: 0.9;
@@ -1025,11 +1025,11 @@ div.amount {
 .advantages input {
   font-size: 14px;
   font-family: "PT Sans", Arial, sans-serif;
-  color: white;
+  color: #ffffff;
 }
 
 .advantages input {
-  color: white;
+  color: #ffffff;
 }
 
 .advantages label {
@@ -1454,8 +1454,12 @@ input[type="checkbox"]:checked:disabled+label::before {
 }
 
 .hotel-image {
-  width: 165px;
-  padding-top: 13px;
+  width: 135px;
+  height: 90px;
+  background-color: #0080ff;
+  line-height: 0;
+  margin-right: 28px;
+  margin-top: 13px;
 }
 
 .sorting {
@@ -1630,8 +1634,8 @@ input[type="checkbox"]:checked:disabled+label::before {
 .result {
   width: 165px;
   color: black;
-  padding-left: 72px;
-  padding-bottom: 5px;
+  padding-left: 70px;
+  padding-top: 3px;
 }
 
 .result h3 {
@@ -1642,10 +1646,10 @@ input[type="checkbox"]:checked:disabled+label::before {
 
 .assortment {
   width: 780px;
-  padding-top: 29px;
+  padding-top: 31px;
   font-size: 12px;
   font-family: "PT Sans", Arial, sans-serif;
-  padding-bottom: 35px;
+  padding-bottom: 33px;
 }
 
 .assortment .active {
