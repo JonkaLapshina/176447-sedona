@@ -283,6 +283,8 @@ li a {
   background: url("../img/mountains.jpg") no-repeat;
   background-size: 1200px 509px;
   padding-top: 448px;
+  max-width: 100%;
+  height: auto;
 }
 
 .welcome {
@@ -414,7 +416,8 @@ li a {
 }
 
 .features-image {
-  max-width: 800px;
+  max-width: 100%;
+  height: auto;
   background-color: #ff0000;
   line-height: 0;
 }
@@ -578,6 +581,7 @@ li a {
 
 iframe {
   margin-left: -600px;
+  border-color: #008000;
 }
 
 .table {
@@ -637,6 +641,7 @@ input[id="search"]:active {
 input[type="text"]:focus {
   background-color: #ffffff;
   outline: none;
+  border: 1px solid #e5e5e5;
 }
 
 .form-data {
@@ -1003,7 +1008,8 @@ div.amount {
 }
 
 .advantages {
-  max-width: 1200px;
+  max-width: 100%;
+  height: auto;
   display: flex;
   padding-top: 14px;
   padding-bottom: 18px;
@@ -1290,22 +1296,19 @@ input[type="checkbox"]:checked:disabled+label::before {
 .price-controls label {
   display: inline-block;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 22px;
   vertical-align: top;
   cursor: pointer;
 }
 
 .price-controls .min-price, .price-controls .max-price {
   //width: 90px;
-  padding-left: 53px;
+  padding-left: 50px;
 }
 
 .price-controls span {
-  padding-top: -40px;
+  padding-top: -50px;
   padding-left: 12px;
-}
-
-.min-price span {
   margin-right: -15px;
 }
 
@@ -1454,12 +1457,13 @@ input[type="checkbox"]:checked:disabled+label::before {
 }
 
 .hotel-image {
-  width: 135px;
-  height: 90px;
   background-color: #0080ff;
   line-height: 0;
   margin-right: 28px;
   margin-top: 13px;
+  margin-bottom: 18px;
+  max-width: 100%;
+  height: auto;
 }
 
 .sorting {
