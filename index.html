@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic">
 
 </head>
@@ -55,26 +55,28 @@
       <div class="advantages-item">
         <span class="house"></span>
         <h2>Жилье</h2>
-        <span> Рекомендуем пожить в настоящем <br>мотеле, все как в кино! </span></div>
+        <span> Рекомендуем пожить в настоящем мотеле, все как в кино! </span></div>
       <div class="advantages-item">
         <span class="meat"></span>
         <h2> Еда </h2>
-        <span> Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь! </span></div>
+        <span> Всегда заказывайте фирменный бургер, вы не разочаруетесь! </span></div>
       <div class="advantages-item">
         <span class="souvenir"></span>
         <h2> Сувениры </h2>
-        <span> Не только китайского, но и местного<br> производства! </span></div>
+        <span> Не только китайского, но и местного производства! </span></div>
     </section>
+
     <section class="features">
       <div class="features-image">
         <img src="img/bridge.jpg" height="257" width="800" alt="bridge">
       </div>
       <div class="features-item features-blue">
-        <h2>Там есть<br> мост дьявола</h2>
+        <h2>Там есть <br> мост дьявола</h2>
         <span>  &mdash; №2  &mdash; </span>
         <p> Да, по нему можно пройти, если конечно вы осмелитесь </p>
       </div>
     </section>
+
     <section class="features">
       <div class="features-item features-grey">
         <h2>Небольшая площадь </h2>
@@ -100,14 +102,14 @@
 
     <section class="map">
       <form action="https://echo.htmlacademy.ru" method="get" class="table">
-        <label>Дата заезда:</label>
-        <input class="form-data" type="text" required value="24 АПРЕЛЯ 2016">
+        <label for="arrival-date">Дата заезда:</label>
+        <input class="form-data" type="text" required value="24 АПРЕЛЯ 2016" id="arrival-date">
         <div class="date-grey">
           <a href="#"></a>
         </div>
 
-        <label><span>Дата выезда:</span></label>
-        <input class="form-data" type="text" required value="4 ИЮЛЯ 2016">
+        <label for="exit-date"><span>Дата выезда:</span></label>
+        <input class="form-data" type="text" required value="4 ИЮЛЯ 2016" id="exit-date">
         <div class="date-grey">
           <a href="#"></a>
         </div>
@@ -115,18 +117,18 @@
         <div class="amount"><label for="adults">Взрослые: </label>
           <button class="minus"></button>
         </div>
-        <div class="amount"><input type="text" value="2" id="number"><label></label></div>
+        <div class="amount"><input type="text" value="2" id="adults"><label></label></div>
         <div class="amount"><button class="plus"></button>
           <label for="children">Дети: </label></div>
         <div class="amount"><button class="minus"></button>
           <label></label>
         </div>
-        <div class="amount"><input type="text" value="0" id="number"><label></label></div>
+        <div class="amount"><input type="text" value="0" id="children"><label></label></div>
         <div class="amount"><button class="plus"></button><label></label></div>
         <div><input type="submit" value="НАЙТИ" id="search"><label></label></div>
       </form>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.3801236316!2d-111.8651786027375!3d34.8543583735493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1477466758797"
-          width="1200" height="594" frameborder="0" style="border:0" allowfullscreen></iframe>
+          width="1200" height="594" style="border:0" allowfullscreen></iframe>
     </section>
     <footer class="direction-index">
       <div class="hashtag"> <a href="#"> #VISITSEDONA </a></div>
